@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зеленая энциклопедия - Главная</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.png" type="image/png">
+</head>
+<body>
+<header class="header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <div class="logo-simple">
+                <div class="leaf-simple"></div>
+            </div>
+            <span>Зеленая энциклопедия</span>
+        </a>
+        <button class="burger-menu" id="burgerMenu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+        <nav class="nav" id="mainNav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li class="dropdown">
+                    <a href="#">Энциклопедия</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/cacti-succulent.html">Кактусы и суккуленты</a></li>
+                        <li><a href="pages/decorative-leafy.html">Декоративно-лиственные</a></li>
+                        <li><a href="pages/flowering-plants.html">Цветущие растения</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/caring-tips.html">Советы по уходу</a></li>
+                <li><a href="pages/gallery.html">Галерея</a></li>
+                <li class="dropdown">
+                    <a href="#">Задания</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="task1/index.html">Задание 1</a></li>
+                        <li><a href="task2/index.html">Задание 2</a></li>
+                        <li><a href="task3/index.html">Задание 3</a></li>
+                        <li><a href="task5/index.html">Задание 5</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main container">
+    <section class="hero">
+        <h1>Добро пожаловать в мир домашних растений!</h1>
+        <p>Откройте для себя секреты ухода, узнайте о разных видах растений и создайте свой зеленый оазис.</p>
+    </section>
+    <section class="featured-plants">
+        <h2>Популярные растения</h2>
+        <div class="plant-grid">
+            <article class="plant-card">
+                <img src="images/monstera.webp" alt="Монстера">
+                <h3>Монстера</h3>
+                <p>Монстера деликатесная — крупное тропическое растение с резными листьями. Любит рассеянный свет и умеренный полив.</p>
+                <button onclick="openPlantModal('monstera')" class="read-more">Подробнее...</button>
+            </article>
+            <article class="plant-card">
+                <img src="images/sansevieria.webp" alt="Сансевиерия">
+                <h3>Сансевиерия</h3>
+                <p>"Тещин язык" — невероятно выносливое растение, которое прощает ошибки в уходе. Отлично очищает воздух.</p>
+                <button onclick="openPlantModal('sansevieria')" class="read-more">Подробнее...</button>
+            </article>
+            <article class="plant-card">
+                <img src="images/orchid.jpg" alt="Орхидея Фаленопсис">
+                <h3>Орхидея Фаленопсис</h3>
+                <p>Элегантное цветущее растение. Требует особого подхода к поливу и любит высокую влажность воздуха.</p>
+                <button onclick="openPlantModal('orchid')" class="read-more">Подробнее...</button>
+            </article>
+            <article class="plant-card">
+                <img src="images/ficus.webp" alt="Фикус Бенджамина">
+                <h3>Фикус Бенджамина</h3>
+                <p>Популярное декоративно-лиственное дерево. Светолюбиво, не переносит сквозняков и частых перестановок.</p>
+                <button onclick="openPlantModal('ficus')" class="read-more">Подробнее...</button>
+            </article>
+        </div>
+    </section>
+    <section class="about-text">
+        <h2>Почему дома нужны растения?</h2>
+        <p>Комнатные растения — это не просто элемент декора. Это живые организмы, которые приносят в наш дом красоту, уют и пользу. Они способны преобразить любое пространство, добавив ему красок и жизни. Но их значение гораздо глубже.</p>
+        <p>Научно доказано, что растения улучшают качество воздуха в помещении. Они поглощают углекислый газ и выделяют кислород, а также увлажняют воздух, что особенно важно в отопительный сезон. Многие виды, такие как спатифиллум или хлорофитум, являются природными фильтрами, удаляя из воздуха вредные летучие соединения, которые могут выделять мебель, краска и бытовая химия.</p>
+        <img src="images/room.jpg" alt="Растения очищают воздух" style="width: 100%; max-width: 600px; display: block; margin: 20px auto;">
+        <p>Забота о растениях — это прекрасный способ снять стресс и отвлечься от повседневной суеты. Регулярный уход, наблюдение за ростом и появлением новых листьев приносит чувство удовлетворения и покоя. Это своего рода медитация, которая помогает развить ответственность и терпение.</p>
+        <p>Кроме того, зеленый цвет листьев благотворно влияет на психику, снижает утомляемость глаз и помогает сосредоточиться. Растения в рабочем кабинете или на домашнем офисе могут повысить продуктивность и креативность. А в детской комнате они с ранних лет прививают любовь к природе.</p>
+        <p>Создание собственной коллекции домашних растений — это увлекательное хобби. Вы можете начать с неприхотливых кактусов или замиокулькаса, а затем перейти к более капризным и экзотическим видам, таким как калатея или алоказия. Каждое растение имеет свой характер и требования, и процесс изучения этих особенностей невероятно интересен.</p>
+        <p>Таким образом, домашние растения — это важная инвестиция в ваше здоровье и благополучие. Они делают дом настоящим жилым пространством, наполненным энергией и гармонией. Не бойтесь начать — даже один маленький горшок с зеленым питомцем способен изменить атмосферу к лучшему.</p>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-logo">
+            <div class="logo-simple">
+                <div class="leaf-simple"></div>
+            </div>
+            <span>Зеленая энциклопедия © 2025</span>
+        </div>
+    </div>
+</footer>
+<div id="plantModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <img id="modalImage" src="" alt="">
+            <div class="modal-text">
+                <h2 id="modalTitle"></h2>
+                <div id="modalDescription"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="scripts/plant-modal.js"></script>
+<script src="scripts/mobile-menu.js"></script>
+</body>
+</html>
